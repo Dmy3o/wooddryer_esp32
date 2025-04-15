@@ -1,40 +1,42 @@
 # Wood Dryer ESP32
 
-Проєкт автоматизованої сушарки деревини з керуванням через інтернет на базі ESP32 Wroom CH340. Система вимірює температуру, керує нагрівачем та логує дані. 
+A project for an automated wood dryer with internet control based on the ESP32 Wroom CH340. The system measures temperature, controls the heater, and logs data. 
 
-## Особливості
+## Features
 
-- Вимірювання температури за допомогою датчика Pt100 через MAX31865
-- Керування ТЕНом через реле
-- Веб-інтерфейс для моніторингу та керування процесом сушіння
-- Підготовка до логування даних та автоматичного регулювання режимів
+- Temperature measurement using a Pt100 sensor via MAX31865
+- Heater control via relay
+- Web interface for monitoring and controlling the drying process
+- Preparation for data logging and automatic mode regulation
 
-## Як почати
+## Project Structure
 
-1. Встановити всі необхідні бібліотеки в Arduino IDE:
+## Getting Started
+
+1. Install all necessary libraries in the Arduino IDE:
    - `Adafruit MAX31865`
-   - `WiFi` (вбудована в ESP32)
-   - `AsyncWebServer` (опційно)
+   - `WiFi` (built into ESP32)
+   - `AsyncWebServer` (optional)
 
-2. Підключити Pt100 через MAX31865 згідно схеми (див. `hardware/`)
+2. Connect the Pt100 sensor via MAX31865 according to the schematic (see `hardware/`)
 
-3. Завантажити скетч із папки `firmware/`
+3. Upload the sketch from the `firmware/` folder
 
-## Веб-інтерфейс
+## Web Interface
 
-Планується простий інтерфейс для:
-- Відображення температур
-- Старту/зупинки сушки
-- Журналу подій
+A simple interface is planned for:
+- Displaying temperature readings
+- Starting/stopping the drying process
+- Event log
 
-## Автор
+## Author
 
-Розробка: [Dmy3o](https://github.com/Dmy3o)
+Developer: [Dmy3o](https://github.com/Dmy3o)
 
-Співпраця відкрита — запрошую до репозиторію!
+Collaboration is welcome — feel free to contribute to the repository!
 
 ---
 
-## Ліцензія
+## License
 
-Цей проєкт ліцензовано на умовах **Apache 2.0 License**.
+This project is licensed under the **Apache 2.0 License**.
